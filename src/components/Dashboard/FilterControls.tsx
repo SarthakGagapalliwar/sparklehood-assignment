@@ -25,9 +25,12 @@ export default function FilterControls({
 }: FilterControlsProps) {
   return (
     <motion.div
+      // initial={{ opacity: 0, y: 20 }}
+      // animate={{ opacity: 1, y: 0 }}
+      // transition={{ duration: 0.4 }}
       initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
     >
       <Card className="p-6 bg-gray-900 shadow-md rounded-xl border-purple-900">
         <div className="flex flex-col sm:flex-row gap-6">
@@ -64,9 +67,12 @@ export default function FilterControls({
 
           <motion.div 
             className="flex-1"
-            initial={{ x: 20, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ delay: 0.2 }}
+            // initial={{ x: 20, opacity: 0 }}
+            // animate={{ x: 0, opacity: 1 }}
+            // transition={{ delay: 0.2 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
           >
             <label className="flex items-center gap-2 text-sm font-medium mb-3 text-purple-300">
               <motion.div animate={{ rotate: sortOrder === "desc" ? 0 : 180 }} transition={{ duration: 0.3 }}>

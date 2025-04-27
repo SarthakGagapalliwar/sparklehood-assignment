@@ -1,55 +1,120 @@
-# Welcome to your Lovable project
+# AI Safety Incident Dashboard
 
-## Project info
+A modern dashboard for monitoring, reporting, and tracking AI safety incidents in real-time.
 
-## How can I edit this code?
+![Dashboard Screenshot](https://api.placeholder.com/800/400)
 
-There are several ways of editing your application.
+## Project Overview
 
-**Use your preferred IDE**
+The AI Safety Incident Dashboard provides a centralized platform for organizations to track and manage AI safety incidents. This application allows users to report new incidents, filter existing incidents by severity, and sort them chronologically to prioritize response efforts.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Features
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Incident Reporting:** Submit new AI safety incidents with title, description, and severity level
+- **Filtering & Sorting:** Filter incidents by severity (Low, Medium, High) and sort by date
+- **Responsive Design:** Optimized for both desktop and mobile devices
+- **Real-time Updates:** Instantly see new incidents as they're reported
+- **Modern UI:** Sleek black and purple design with intuitive user interface
 
-Follow these steps:
+## Getting Started
+
+### Prerequisites
+
+- Node.js 16.x or higher
+- npm 8.x or higher
+
+### Installation
+
+There are several ways to set up and run this project:
+
+#### Option 1: Clone & Run Locally
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Step 1: Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Step 2: Navigate to the project directory
+cd ai-safety-incident-dashboard
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Step 3: Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:5173`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+#### Option 2: Edit Directly in GitHub
 
-**Use GitHub Codespaces**
+1. Navigate to the desired file(s) in the GitHub repository
+2. Click the "Edit" button (pencil icon) at the top right of the file view
+3. Make your changes and commit them with a descriptive message
+4. The updated code will automatically be reflected in the deployed application
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+#### Option 3: Use GitHub Codespaces
 
-## What technologies are used for this project?
+1. Navigate to the main page of your repository
+2. Click on the "Code" button (green button) near the top right
+3. Select the "Codespaces" tab
+4. Click on "New codespace" to launch a new development environment
+5. Edit files directly within the Codespace and commit/push your changes
 
-This project is built with:
+## Project Structure
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-- motion
+```
+├── public/              # Static assets
+├── src/
+│   ├── components/      # UI components
+│   │   ├── Dashboard.tsx           # Main dashboard layout
+│   │   ├── FilterControls.tsx      # Severity and date filtering
+│   │   ├── IncidentForm.tsx        # Form for submitting new incidents
+│   │   └── IncidentList.tsx        # Display of filtered incidents
+│   ├── data/            # Mock data and data utilities
+│   ├── types/           # TypeScript interfaces and types
+│   ├── App.tsx          # Root application component
+│   └── main.tsx         # Entry point
+├── index.html           # HTML entry
+└── package.json         # Dependencies and scripts
+```
 
+## Technology Stack
+
+This project leverages modern web technologies:
+
+- **Framework:** React with TypeScript
+- **Build Tool:** Vite (for fast development and optimized builds)
+- **UI Components:** shadcn/ui (accessible UI components)
+- **Styling:** Tailwind CSS (utility-first CSS framework)
+- **Animations:** Motion (for smooth transitions and effects)
+- **Date Handling:** date-fns (modern JavaScript date utility library)
+- **State Management:** React's built-in useState hook
+
+## Development
+
+### Available Scripts
+
+- `npm run dev` - Start development server with hot module replacement
+- `npm run build` - Build for production
+- `npm run preview` - Preview the production build locally
+- `npm run lint` - Run ESLint to check code quality
+- `npm run test` - Run tests (if configured)
+
+### Contributing
+
+1. Create a new branch for your feature or bugfix
+2. Make your changes
+3. Submit a pull request with a clear description of the changes
+4. Request code reviews from team members
+
+## Deployment
+
+The application is deployed automatically when changes are pushed to the main branch.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Support
+
+For questions or assistance, please contact the project team or create an issue in the GitHub repository.

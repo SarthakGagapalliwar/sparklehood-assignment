@@ -30,9 +30,9 @@ export default function IncidentList({ incidents }: IncidentListProps) {
   return (
     <motion.div
       className="space-y-4"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: 0.1 }}
     >
       {incidents.length === 0 ? (
         <motion.div
@@ -49,10 +49,13 @@ export default function IncidentList({ incidents }: IncidentListProps) {
           {incidents.map((incident, index) => (
             <motion.div
               key={incident.id}
+              // initial={{ opacity: 0, y: 20 }}
+              // animate={{ opacity: 1, y: 0 }}
+              // exit={{ opacity: 0, y: -20 }}
+              // transition={{ duration: 0.3, delay: index * 0.05 }}
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.3, delay: index * 0.05 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
             >
               <Card className="p-6 bg-gray-900 transition-all hover:shadow-lg rounded-xl border-purple-900">
                 <div className="flex items-start justify-between gap-4">
