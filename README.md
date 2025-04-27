@@ -2,7 +2,7 @@
 
 A modern dashboard for monitoring, reporting, and tracking AI safety incidents in real-time.
 
-![Dashboard Screenshot](https://api.placeholder.com/800/400)
+![Dashboard Screenshot](image.png)
 
 ## Project Overview
 
