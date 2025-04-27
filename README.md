@@ -65,11 +65,12 @@ The application will be available at `http://localhost:5173`
 ```
 ├── public/              # Static assets
 ├── src/
-│   ├── components/      # UI components
+│   ├── components/      # Main components
 │   │   ├── Dashboard.tsx           # Main dashboard layout
 │   │   ├── FilterControls.tsx      # Severity and date filtering
 │   │   ├── IncidentForm.tsx        # Form for submitting new incidents
-│   │   └── IncidentList.tsx        # Display of filtered incidents
+│   │   └── IncidentList.tsx        # Display of filtered incidents 
+│   ├── ui/              # UI components
 │   ├── data/            # Mock data and data utilities
 │   ├── types/           # TypeScript interfaces and types
 │   ├── App.tsx          # Root application component
@@ -84,7 +85,7 @@ This project leverages modern web technologies:
 
 - **Framework:** React with TypeScript
 - **Build Tool:** Vite (for fast development and optimized builds)
-- **UI Components:** shadcn/ui (accessible UI components)
+- **UI Components:** shadcn/ui (accessible UI components), magicui and aceternity (animation components)
 - **Styling:** Tailwind CSS (utility-first CSS framework)
 - **Animations:** Motion (for smooth transitions and effects)
 - **Date Handling:** date-fns (modern JavaScript date utility library)
