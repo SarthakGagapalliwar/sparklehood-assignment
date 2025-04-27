@@ -38,7 +38,7 @@ export default function Dashboard() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-950 relative">
+    <div className="min-h-screen bg-gray-950 relative font-raleway">
       {/* Background Gradient */}
       <BackgroundGradientAnimation containerClassName="fixed inset-0 z-0" />
 
